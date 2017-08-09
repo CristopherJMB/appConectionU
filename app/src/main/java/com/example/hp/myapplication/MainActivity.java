@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         Intent i = new Intent(getApplicationContext(),recMsn.class);
                         startActivity(i);
                     } else {
-                        Toast.makeText(getApplicationContext(),"usuario y/o contraseña Incorrectos******",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"usuario y/o contraseña Incorrectos****",Toast.LENGTH_LONG).show();
                     }
 
 
