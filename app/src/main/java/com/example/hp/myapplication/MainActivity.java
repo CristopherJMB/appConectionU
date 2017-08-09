@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
 
+
                     txtusu.setText("");
                     txtpas.setText("");
                     txtusu.findFocus();
