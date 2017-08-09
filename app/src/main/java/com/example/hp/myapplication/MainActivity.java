@@ -83,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"usuario y/o contraseña Incorrectos******",Toast.LENGTH_LONG).show();
                     }
 
+
                     txtusu.setText("");
                     txtpas.setText("");
                     txtusu.findFocus();
