@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cursos">
+      <item>1er. Semestre</item>
+      <item>3er. Semestre</item>
+      <item>4to. Semestre</item>
+      <item>5to. Semestre</item>
+      <item>6to. Semestre</item>
+      <item>7to. Semestre</item>
+      <item>8vo. Semestre</item>
+      <item>9no. Semestre</item>
+    </string-array>
+</resources>
