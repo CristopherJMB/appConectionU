@@ -40,7 +40,7 @@ public class envioMsn extends AppCompatActivity {
                         String.valueOf(txtTt.getText()));
                 helper.cerrar();
 
-                Toast.makeText(getApplicationContext(),"Enviado"
+                Toast.makeText(getApplicationContext(),"Mensaje Enviado"
                         ,Toast.LENGTH_LONG).show();
             }
         });
@@ -55,7 +55,6 @@ public class envioMsn extends AppCompatActivity {
         if(tit==null||tit.length()==0){
             cursor=helper.mostrarMsn();
         }else {
-
         }
 
         ArrayList<MensajeBeans> item=new ArrayList<MensajeBeans>();
@@ -63,7 +62,6 @@ public class envioMsn extends AppCompatActivity {
             MensajeBeans u=new MensajeBeans(cursor.getInt(0),cursor.getString(1),cursor.getString(2));
             item.add(u);
         }while (cursor.moveToNext());
-
 
         ArrayAdapter<MensajeBeans> adaptador=new ArrayAdapter<MensajeBeans>
                 (this,android.R.layout.simple_list_item_1,item);

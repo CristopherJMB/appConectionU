@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     Cursor cursor = helper.ConsulUsuPass(txtusu.getText().toString(), txtpas.getText().toString());
 
                     if (cursor.getCount() > 0) {
-                        Intent i = new Intent(getApplicationContext(), envioMsn.class);
+                        Intent i = new Intent(getApplicationContext(),envioMsn.class);
                         startActivity(i);
                     } else {
                         Toast.makeText(getApplicationContext(), "usuario y/o contraseña Incorrectos", Toast.LENGTH_LONG).show();
@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+/*
+        //LOGUEO DE ALUMNO
         btnIngresarA.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -90,6 +92,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        });
+        });*/
     }
 }
