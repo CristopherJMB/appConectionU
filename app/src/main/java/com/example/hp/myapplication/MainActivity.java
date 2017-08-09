@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                 EditText txtusu=(EditText)findViewById(R.id.TxtUsuario);
                 EditText txtpas=(EditText)findViewById(R.id.TxtPass);
 
-
                 try {
                     Cursor cursor = helper.ConsultarUsuPassA(txtusu.getText().toString(), txtpas.getText().toString());
                     if (cursor.getCount()>0){
