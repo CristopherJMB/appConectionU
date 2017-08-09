@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 EditText txtpas=(EditText)findViewById(R.id.TxtPass);
 
 
-
                 try {
                     Cursor cursor = helper.ConsultarUsuPassA(txtusu.getText().toString(), txtpas.getText().toString());
                     if (cursor.getCount()>0){
@@ -82,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(getApplicationContext(),"usuario y/o contraseña Incorrectos****",Toast.LENGTH_LONG).show();
                     }
+
 
 
                     txtusu.setText("");
