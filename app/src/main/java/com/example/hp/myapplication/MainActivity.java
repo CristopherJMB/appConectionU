@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 /*
+
         //LOGUEO DE ALUMNO
         btnIngresarA.setOnClickListener(new View.OnClickListener(){
             @Override
