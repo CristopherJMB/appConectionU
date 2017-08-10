@@ -12,6 +12,7 @@ import OpenHelper.SQLite_OpenHelper;
 public class MainActivity extends AppCompatActivity {
 
 
+
     TextView tvRegistrar;
     Button btnIngresar,btnIngresarA;
     SQLite_OpenHelper helper=new SQLite_OpenHelper(this,"BD1",null,1); //INSTANCIA DE LOS REGISTROS QUE CONTIENE LA BD
