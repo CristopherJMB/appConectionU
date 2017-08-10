@@ -31,11 +31,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), identidad.class);
                 startActivity(i);
+
+
             }
         });
 
         btnIngresar = (Button) findViewById(R.id.btnIngresar);
         btnIngresarA=(Button)findViewById(R.id.btnINgresarA);
+
 
 
         btnIngresar.setOnClickListener(new View.OnClickListener(){
@@ -60,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-        ;
         /*
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override

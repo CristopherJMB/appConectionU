@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="TIulo del MSN"
+            android:hint="Asunto"
             android:inputType="textPersonName" />
 
         <EditText
@@ -61,7 +61,15 @@
         <ListView
             android:id="@+id/lvUsuarios"
             android:layout_width="wrap_content"
-            android:layout_height="213dp" />
+            android:layout_height="186dp" />
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="129dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="0.31"
+            android:text="SALIR" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -39,6 +39,6 @@ public class MensajeBeans {
 
     @Override
     public String toString() {
-        return cod + " - " + tit + " - " + msn ;
+        return cod + " - " + msn + " - " + tit ;
     }
 }

@@ -3,7 +3,9 @@ package com.example.hp.myapplication;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -15,8 +17,11 @@ public class recMsn extends AppCompatActivity {
 
 
     ListView liV;
+    Button btnSAL;
 
     SQLite_OpenHelper helper=new SQLite_OpenHelper(this,"BD1",null,1);
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,14 @@ public class recMsn extends AppCompatActivity {
 
         liV=(ListView)findViewById(R.id.lvrecMsn);
         enviaMSN("");
+        btnSAL=(Button)findViewById(R.id.btnSA);
+        btnSAL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+
+        });
     }
 
     private void enviaMSN(String tit){
@@ -46,4 +59,6 @@ public class recMsn extends AppCompatActivity {
 
         liV.setAdapter(adaptador);
     }
+
+
 }

@@ -11,7 +11,7 @@ import android.widget.Toast;
 import OpenHelper.SQLite_OpenHelper;
 public class envioMsn extends AppCompatActivity {
 
-    Button btnenvioMsn;
+    Button btnenvioMsn,btnS;
     EditText txtMsn, txtTt;
     ListView lv;
 
@@ -24,6 +24,7 @@ public class envioMsn extends AppCompatActivity {
 
 
         btnenvioMsn = (Button) findViewById(R.id.btnEnvMsn);
+        btnS=(Button)findViewById(R.id.btnSalir);
 
         txtMsn = (EditText) findViewById(R.id.txtEnvE);
         txtTt = (EditText) findViewById(R.id.txtTit);
@@ -40,11 +41,17 @@ public class envioMsn extends AppCompatActivity {
             }
         });
 
+        btnS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+        }
+
         //lv=(ListView)findViewById(R.id.lvUsuarios);
         // enviaMsn("");
-    }
+    });
 
-}
+}}
 /*
     private void enviaMsn(String tit){
         helper.abrir();
