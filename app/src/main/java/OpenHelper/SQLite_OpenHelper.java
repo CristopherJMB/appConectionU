@@ -119,7 +119,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper{
     //METODO QUE PERMITE ENVIAR EL MENSAJE
 
     public Cursor mostrarMsn() throws SQLException{
-        Cursor mcursor=this.getReadableDatabase().query("enviarmensaje",new String[]{"_ID","Mensaje","Titulo"},null,null,null,null,null);
+        Cursor mcursor=this.getReadableDatabase().query("enviarmensaje",new String[]{"_ID","Titulo","Mensaje"},null,null,null,null,null);
         if (mcursor!=null){
             mcursor.moveToFirst();
         }

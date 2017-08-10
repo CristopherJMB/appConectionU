@@ -1,18 +1,13 @@
 package com.example.hp.myapplication;
 
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import Beans.MensajeBeans;
 import OpenHelper.SQLite_OpenHelper;
 public class envioMsn extends AppCompatActivity {
 
@@ -20,7 +15,7 @@ public class envioMsn extends AppCompatActivity {
     EditText txtMsn, txtTt;
     ListView lv;
 
-    SQLite_OpenHelper helper=new SQLite_OpenHelper(this,"BD1",null,1);
+    SQLite_OpenHelper helper = new SQLite_OpenHelper(this, "BD1", null, 1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +23,10 @@ public class envioMsn extends AppCompatActivity {
         setContentView(R.layout.activity_envio_msn);
 
 
-        btnenvioMsn=(Button)findViewById(R.id.btnEnvMsn);
+        btnenvioMsn = (Button) findViewById(R.id.btnEnvMsn);
 
-        txtMsn=(EditText)findViewById(R.id.txtEnvE);
-        txtTt=(EditText)findViewById(R.id.txtTit);
+        txtMsn = (EditText) findViewById(R.id.txtEnvE);
+        txtTt = (EditText) findViewById(R.id.txtTit);
         btnenvioMsn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,15 +35,17 @@ public class envioMsn extends AppCompatActivity {
                         String.valueOf(txtTt.getText()));
                 helper.cerrar();
 
-                Toast.makeText(getApplicationContext(),"Mensaje Enviado"
-                        ,Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Mensaje Enviado"
+                        , Toast.LENGTH_LONG).show();
             }
         });
 
-        lv=(ListView)findViewById(R.id.lvUsuarios);
-       enviaMsn("");
+        //lv=(ListView)findViewById(R.id.lvUsuarios);
+        // enviaMsn("");
     }
 
+}
+/*
     private void enviaMsn(String tit){
         helper.abrir();
         Cursor cursor=null;
@@ -68,6 +65,7 @@ public class envioMsn extends AppCompatActivity {
         lv.setAdapter(adaptador);
     }
 }
+
 
         /*
         private void enviaMsn(String m){

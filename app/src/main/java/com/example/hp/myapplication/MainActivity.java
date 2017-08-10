@@ -1,15 +1,11 @@
 package com.example.hp.myapplication;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.SQLException;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import OpenHelper.SQLite_OpenHelper;
 
@@ -19,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvRegistrar;
     Button btnIngresar,btnIngresarA;
     SQLite_OpenHelper helper=new SQLite_OpenHelper(this,"BD1",null,1); //INSTANCIA DE LOS REGISTROS QUE CONTIENE LA BD
+
 
 
     @Override
@@ -39,6 +36,32 @@ public class MainActivity extends AppCompatActivity {
         btnIngresar = (Button) findViewById(R.id.btnIngresar);
         btnIngresarA=(Button)findViewById(R.id.btnINgresarA);
 
+
+        btnIngresar.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(),envioMsn.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        btnIngresarA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent a=new Intent(getApplicationContext(),recMsn.class);
+                startActivity(a);
+
+            }
+        });
+
+
+
+        ;
+        /*
         btnIngresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

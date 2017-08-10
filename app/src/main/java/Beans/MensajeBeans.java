@@ -13,23 +13,13 @@ public class MensajeBeans {
         this.cod=cod;
         this.tit=tit;
         this.msn=msn;
-
     }
-
     public int getCod() {
         return cod;
     }
 
     public void setCod(int cod) {
         this.cod = cod;
-    }
-
-    public String getMsn() {
-        return msn;
-    }
-
-    public void setMsn(String msn) {
-        this.msn = msn;
     }
 
     public String getTit() {
@@ -39,6 +29,13 @@ public class MensajeBeans {
     public void setTit(String tit) {
         this.tit = tit;
     }
+
+    public String getMsn() {
+        return msn;
+    }
+
+    public void setMsn(String msn) { this.msn = msn; }
+
 
     @Override
     public String toString() {

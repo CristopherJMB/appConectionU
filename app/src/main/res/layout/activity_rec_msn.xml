@@ -21,5 +21,10 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/lvrecMsn"
+            android:layout_width="match_parent"
+            android:layout_height="419dp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
